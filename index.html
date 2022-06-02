@@ -11,56 +11,63 @@
 </head>
 <body>
     
-    <img src="./imgs/dark-mode.svg" alt="">
+    <img src="/img/darkmode.png" alt="" id="darkmode" onclick="changeMode">
 
-    <div id="calculator" style="display: flex;">
-
-        <div id="visor"></div>
+    <div id="calculator" class="calculator-light">
         
-        <div id="operators">
-            <img class="simbol" src="./imgs/Square root.svg" alt="" srcset="">
-            <img class="simbol" src="./imgs/Pi.svg" alt="" srcset="">
-            <img class="simbol" src="./imgs/^.svg" alt="" srcset="">
-            <img class="simbol" src="./imgs/!.svg" alt="" srcset="">
-        </div>
-        
-        <div id="row1">
-            <img class="simbol" src="./imgs/AC.svg" alt="" srcset="">
-            <img class="simbol" src="./imgs/( ).svg" alt="" srcset="">
-            <img class="simbol" src="./imgs/Divide.svg" alt="" srcset="">
-            <img class="simbol" src="./imgs/Percent.svg" alt="" srcset="">
-        </div>
-
-        <div id="row2">
-            <p>7</p>
-            <p>8</p>
-            <p>9</p>
-            <img class="simbol" src="./imgs/x.svg" alt="" srcset="">
-        </div>
-
-        <div id="row3">
-            <p>4</p>
-            <p>5</p>
-            <p>6</p>
-            <img class="simbol" src="./imgs/Minus.svg" alt="" srcset="">
-        </div>
-
-        <div id="row4">
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-            <img class="simbol" src="./imgs/+.svg" alt="" srcset="">
-        </div>
-
-        <div id="row5">
+        <div id="visor">
             <p>0</p>
-            <p>,</p>
-            <img class="simbol" src="./imgs/Erase.svg" alt="" srcset="">
-            <img class="simbol" src="./imgs/=.svg" alt="" srcset="">
         </div>
 
-    </div>
+        <div id="operators">
+            
+            <table>
+                <tr>
+                    <td class="ac">
+                        AC
+                    </td>
+                    <td class="operators">
+                        ( )
+                    </td>
+                    <td class="operators">
+                        %
+                    </td>
+                    <td class="operators">
+                        /
+                    </td>
+                </tr>
+                <tr>
+                    <td class="numbers">7</td>
+                    <td class="numbers">8</td>
+                    <td class="numbers">9</td>
+                    <td class="operators">x</td>
+                </tr>
+                <tr>
+                    <td class="numbers">4</td>
+                    <td class="numbers">5</td>
+                    <td class="numbers">6</td>
+                    <td class="operators">-</td>
+                </tr>
+                <tr>
+                    <td class="numbers">1</td>
+                    <td class="numbers">2</td>
+                    <td class="numbers">3</td>
+                    <td class="operators">+</td>
+                </tr>
+                <tr>
+                    <td class="numbers">0</td>
+                    <td class="numbers">,</td>
+                    <td class="numbers">
+                        <img class="eraser" src="/img/Erase.png" alt="Botão Apagar">
+                    </td>
+                    <td class="operators">=</td>
+                </tr>
+            </table>
 
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
 
 </body>
 </html>

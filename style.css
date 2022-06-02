@@ -1,42 +1,101 @@
 * {
     margin: 0px;
     padding: 0px;
+
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+#darkmode {
+    position: absolute;
+    top: 10vh;
+    left: 20vw;
+
+    width: 5%;
+
+    cursor: pointer;
 }
 
 #calculator {
-    margin: 20px 50px;
-    
-    background-color: #9796DE;
+
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    left: 35vw;
+    top: 5vw;
+
+    border-radius: 15px;
+}
+
+.calculator-light {
+    background-color: #178550;
+}
+
+.calculator-dark {
+    background-color: black;
 }
 
 #visor {
-    
+    position: absolute;
+    width: 370px;
+    height: 150px;
+    left: 1.2vw;
+    top: 2vh;
+
+    background: #FFFACC;
+    border-radius: 20px;
+}
+
+#visor p {
+    font-size: 40px;
+
+    margin-top: 13vh;
+    margin-right: 1vw;
+    float: right;
+
+/* 
+    position: absolute;
+
+    top: 15vh;
+    left: 19vw; */
 }
 
 #operators {
 
+    position: absolute;
+    left: 1vw;
+    top: 25vh;
 }
 
-#row1 {
-
+table {
+    border-spacing: 15px;
+    font-size: 30px;
 }
 
-#row2 {
-    
+td {
+    border: none;
+    border-radius: 50px;
+
+    padding: 5px 20px;
+
+    text-align: center;
+
+    cursor: pointer;
 }
 
-#row3 {
-    
+.ac {
+    background-color: #C0FF99;;
 }
 
-#row4 {
-    
+.operators {
+    background-color: #85D3FE;
 }
 
-#row5 {
-    
+.numbers {
+    background-color: #DCDCDC;;
 }
 
-.simbol {
-
+.eraser {
+    padding-top: 5px;
+    width: 40px;
+    height: 30px;
 }
